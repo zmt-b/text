@@ -1,0 +1,19 @@
+操作系统信息:
+系统版本: ubuntu16.04.6
+用户名和密码都是: handsfree
+ROS版本: ROS kinetic
+
+handsfree软件包子目录简单介绍:
+1. handsfree_ros_ws 保存ROS相关应用程序，包括避障，导航、建图等上位机程序。是机器人、ROS开发学习的主要目录。
+2. OpenRE 是机器人下位机固件程序，目前HandsFree教育系列的机器人使用的是STM32F1和F4单片机。一般研究者不需要改动机器人固件，基本上用不到这个目录的代码。
+3. remote_assistance 是HandsFree的远程协助程序，运行该程序，HandsFree官方团队就可以远程支援你解决问题。
+
+使用准备:
+1. 请确保用户目录下的".bashrc"文件参数HANDSFREE_ROBOT_MODEL参数是你正在使用的机器人型号
+2. 请确保"/home/handsfree/handsfree/handsfree_ros_ws/src/handsfree/rplidar_ros/launch/rplidar.launch"参数
+    <arg name="rplidar_type" default="A2" doc="model type [A1, A2, A3]"/>
+的雷达型号是你正在使用的雷达型号。HandsFree Mini系列机器人标配rplidar "A1"，Stone系列机器人标配rplidar "A2", 也可以根据用户需求配置。
+3. 打开线上教程，开始学习之旅:
+   https://wiki.hfreetech.org/docs/Tutorial/1.1-Getting-Started.html
+
+更多学习资源请参考HandsFreeWiki: https://wiki.hfreetech.org/
